@@ -58,9 +58,9 @@ for table_name in TABLES:
 # inserting users
 user_sql = 'INSERT INTO users (name, nickname, password) VALUES (%s, %s, %s)'
 users = [
-    ("Bruno Divino", "BD", generate_password_hash("alohomora").decode('utf-8')),
-    ("Camila Ferreira", "Mila", generate_password_hash("paozinho").decode('utf-8')),
-    ("Guilherme Louro", "Cake", generate_password_hash("python_is_life").decode('utf-8'))
+    ("Bruno Divino", "Balsamo", generate_password_hash("balsamo").decode('utf-8')),
+    ("Camila Ferreira", "Luis", generate_password_hash("luis").decode('utf-8')),
+    ("Guilherme Louro", "Gustavo", generate_password_hash("Gustavo").decode('utf-8'))
 ]
 cursor.executemany(user_sql, users)
 
